@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5696130639061624952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5696130639061624959}
+  - component: {fileID: 5696130639061624958}
+  - component: {fileID: 5696130639061624953}
+  - component: {fileID: 2042331993}
+  - component: {fileID: 1990432745}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5696130639061624959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696130639061624952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.61844677, y: 0.5563388, z: -1.0778023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5696130639061624958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696130639061624952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea9d573bcb2eb341843f6b21f41d0ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScore: 0
+  player: {fileID: 0}
+  isResetting: 0
+  isPaused: 0
+  tm: {fileID: 0}
+  leaderboard: {fileID: 0}
+  currentLevel: 1
+  numLevels: 6
+  reset: 0
+  dark: {r: 0.105882354, g: 0.105882354, b: 0.11372549, a: 1}
+  transparent: {r: 0, g: 0, b: 0, a: 0}
+  deathColor: {r: 0.6132076, g: 0.049172312, b: 0.11093952, a: 1}
+  addScoreColor: {r: 0.1251335, g: 0.7169812, b: 0.17639588, a: 1}
+--- !u!114 &5696130639061624953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696130639061624952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9911d39f482bb45b7586ad626172b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasures: []
+  treasureScore: 100
+  delta: 0.3
+--- !u!114 &2042331993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696130639061624952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18cb2cfe977654247a85cf52de90f6c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  right1: {fileID: 4386126737327028400, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  right2: {fileID: -3556910923359202720, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  rightIdle: {fileID: 316733551419310079, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  left1: {fileID: -3995587790831457917, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  left2: {fileID: -6673236660494664758, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  leftIdle: {fileID: 5008060379283111955, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  up1: {fileID: -8468699455893265468, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  up2: {fileID: -8679685284421656939, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  upIdle: {fileID: -7520075010472162519, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  down1: {fileID: -6980244191318100353, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  down2: {fileID: -1341035472647605614, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+  downIdle: {fileID: 6411882646848600721, guid: ba634e120015ed042a305cd498eb6251, type: 3}
+--- !u!114 &1990432745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696130639061624952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4b9973fbc3e22439b93a3a5827486b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: treasure
+    clip: {fileID: 8300000, guid: 7e8ea7a7e79571548accf7b2de978415, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: seen
+    clip: {fileID: 8300000, guid: 2f6cceb21c7cbfd48ac48b4a47afa312, type: 3}
+    volume: 0.1
+    pitch: 1
+    source: {fileID: 0}
+  - name: stairs
+    clip: {fileID: 8300000, guid: 4a44f9b4b590dc849964d2e4a94e074d, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: move
+    clip: {fileID: 8300000, guid: 23f8db480ac9abb41b41d1e9e093d410, type: 3}
+    volume: 0.1
+    pitch: 0.9
+    source: {fileID: 0}
